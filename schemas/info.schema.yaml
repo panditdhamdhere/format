@@ -10,18 +10,16 @@ type: object
 $ref: "schema:ethdebug/format/info/resources"
 
 properties:
-  compilation:
-    title: Compilation
-    description: |
-      A reference to the compilation as an `{ "id": ... }` object.
-    $ref: "schema:ethdebug/format/materials/compilation"
-
   programs:
     type: array
     items:
       $ref: "schema:ethdebug/format/program"
     additionalItems:
       false
+
+  compilation:
+    $ref: "schema:ethdebug/format/materials/compilation"
+
 
 required:
   - compilation

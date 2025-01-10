@@ -24,6 +24,10 @@ properties:
     additionalProperties:
       $ref: "schema:ethdebug/format/pointer/template"
 
+  compilation:
+    $ref: "schema:ethdebug/format/materials/compilation"
+
+
 required:
   - types
   - pointers
